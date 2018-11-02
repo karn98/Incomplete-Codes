@@ -1,0 +1,73 @@
+/* package codechef; // don't place package name! */
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+/* Name of the class has to be "Main" only if the class is public. */
+class Main
+{
+	public static void main (String[] args) throws Exception
+	{
+		// your code goes here
+		
+		
+		Scanner sc=new Scanner(System.in);
+		int t,i,j;
+		t=sc.nextInt();
+		
+		int n,k,temp;
+		int m,l;
+		int count=0;
+		int x;
+		int min;
+		while(t>0)
+		{
+		    count=0;
+			n=sc.nextInt();
+			m=sc.nextInt();
+			k=sc.nextInt();
+			l=sc.nextInt();
+			Integer A[]=new Integer[n];
+			for(i=0;i<n;i++)
+			A[i]=sc.nextInt();
+			Arrays.sort(A);
+			
+			Integer time[]=new Integer[k+1];
+			
+			x=0;
+			count=m+1;
+			for(i=0;i<=k;i++)
+			{
+			    /*count=0;
+			   for(j=0;j<n;j++)
+			   {
+			       if(A[j]<i)
+			       count++;
+			   }
+			    count=count+m+1;*/
+			    if(x<n && A[x]<i)
+			    {
+			        
+			        count++;
+			        x++;
+			    }
+			    
+			    time[i]=(count*l)-i;
+			    
+			}
+			
+		    min=time[0];
+		    for(i=1;i<=k;i++)
+		    {
+		        if(time[i]<min)
+		         min=time[i];
+		    }
+		    System.out.println(min);
+		    
+		    
+			
+			t--;
+		}
+	}
+}
