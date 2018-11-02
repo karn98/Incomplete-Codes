@@ -1,0 +1,53 @@
+/* package codechef; // don't place package name! */
+
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+/* Name of the class has to be "Main" only if the class is public. */
+class Main
+{
+	
+	public static fun(int n,int k)
+	{
+	    
+	    
+	    
+	    
+	}
+	
+	public static void main (String[] args) throws Exception
+	{
+		// your code goes here
+		
+		Scanner sc=new Scanner(System.in);
+		int t;
+		t=sc.nextInt();
+		unsigned long long int prod=1;
+		unsigned long long int mo=1000000007;
+		int n,k;
+	    int i,j
+		while(t>0)
+		{
+		    
+			n=sc.nextInt();
+		    k=sc.nextInt();
+		    j=1;
+		    int A[]=new int[k];
+		    for(i=0;i<k;i++)
+		    {
+		       A[i]=j;
+		       j++;
+		    }
+		    while(n>0 && k>0)
+		    {
+		        
+		        
+		    }
+		    
+			
+		
+			t--;
+		}
+	}
+}
